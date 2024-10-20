@@ -1,0 +1,51 @@
+@keyframes font-animation {
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+@keyframes color-animation {
+    from{
+        background-color: antiquewhite;
+    }
+    to{
+        background-color: aquamarine;
+    }
+    
+}
+
+/* we can add multiple property together in single from to statement*/
+
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: pink;
+    animation-name: color-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    /* animation-iteration-count: infinite; */
+    animation-direction: normal;
+
+    /* this is the shorthand of animation */
+    /* animation: color-animation 2s ease-in 0s 3 normal; */
+}
+
+/* % in animation */
+@keyframes colorani {
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: azure;
+    }
+    80%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: brown;
+    }
+}
