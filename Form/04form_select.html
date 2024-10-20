@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="profession">Profession</label>
+            <select name="profession" id="profession">
+                <option>Select your option</option>
+                <option value="student">Student</option>
+                <!-- <option value="student" selected>Student</option>  here student will be default by this -->
+                <option value="developer">Developer</option>
+                <option value="working">Working</option>
+            </select>
+            <br>
+        </div>
+
+        <!-- Range -->
+        
+        <label for="rang">Volume</label>
+        <input type="range" id="rang" name="Volume" min="0" max="100">
+        <!-- <input type="range" id="rang" name="Volume" min="0" max="100" step="10" value="20"> -->
+        <br>
+
+        <!-- Text Area -->
+        <label for="feed">Feedback</label>
+        <textarea name="feedback" id="feed"></textarea><br>
+        <!-- <textarea name="feedback" id="feed" rows="6" cols="102" placeholder="write here"></textarea> -->
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

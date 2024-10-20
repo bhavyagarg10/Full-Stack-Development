@@ -1,0 +1,75 @@
+*{
+    font-family: 'Courier New';
+}
+
+h1,h3{
+    color: rgb(245, 41, 54);
+}
+
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: rgb(245, 41, 54);
+    color: white;
+} 
+.upvote{
+    background-color: green;
+    color: white;
+}
+
+/* to apply css for only anchor tag which are in paragraph this called descendent selector */
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+/* Sibiling selector in this all h3 which are immediate after the paragraph are selected */
+p+h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    background-color: crimson;
+    color: bisque;
+}
+
+/* child combinator in this style will apply to all the direct child not after multilevel */
+div>input{
+    background-color: aqua;
+}
+
+/* /attribute selector */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green ;
+}
+
+/* pseudo class like hover active checked nth-of-type */
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: overline;
+}
+button:active{
+    background-color: blue;
+}
+
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+
+/* pseudo element  */
+h1::first-letter{
+    color: black;
+}
+p::first-line{
+    color: purple;
+}
+p::selection{
+    background-color: brown;
+}
