@@ -1,0 +1,42 @@
+h1{
+    background-color: aquamarine;
+    border: 2px solid red;
+}
+@media(width: 400px){
+    h1{
+        background-color: red;
+        color: white;
+    }
+}
+@media(min-width: 600px){
+    div{
+        height: 400px;
+        width: 500px;
+        background-color: aquamarine;
+
+    }
+}
+@media(max-width:600px){
+    div{
+        height: 100px;
+        width: 200px;
+        background-color: bisque;
+        font-size: larger;
+        color: red;
+    }
+}
+@media(min-width:150px) and (max-width:300px){
+    div{
+        height: 510px;
+        width: 651px;
+        background-color: rgb(6, 59, 251);
+        font-size: larger;
+        color: rgb(3, 72, 29);
+    }
+}
+@media(orientation:landscape){
+    h1{
+        background-color: blueviolet;
+        color: black;
+    }
+}
