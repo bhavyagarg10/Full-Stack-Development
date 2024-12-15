@@ -4,6 +4,8 @@ var pass="23135"
 state="Uttar Pradesh"
 let city;
 
+/*pref to use let insted of var due to issue of block scope and functional scope*/
+
 //now change the values
 name="Hitesh"
 pass="564521"
