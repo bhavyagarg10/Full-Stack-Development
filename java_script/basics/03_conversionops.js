@@ -33,3 +33,32 @@ console.log(Boolean(c)) //true*/
 let ca=String(a)
 console.log(typeof ca,ca);*/
 
+// ************************Operations*******************************
+/*let a=3
+let nega=-a
+console.log(nega);
+
+console.log(2+2);
+console.log(2*2);
+console.log(2-2);
+console.log(2**3);
+console.log(2%3);*/
+
+/*let str1="Hello"
+let str2=" Bhavya"
+console.log((str1+str2));
+console.log("1"+2);
+console.log(1+"2");
+console.log("1"+2+2);
+console.log(2+2+"1");
+console.log(2+"1"+2);
+console.log(+true);
+console.log(+"");*/
+
+/*let count=100
+console.log(count++); //100
+// console.log(++count); //101 
+*/
+
+
+
