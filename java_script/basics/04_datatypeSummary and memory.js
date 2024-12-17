@@ -40,4 +40,16 @@ console.log(typeof id);
        Arrays  =>  object
        Function  =>  function
        Object  =>  object*/
-       
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive)  it gives a copy of the value , Heap(Non-Primitive) it gives the reference of the value
+
+let user1={
+    email:"bhavya@gmail.com",
+    name:"bhavya"
+}
+let user2=user1
+user2.email="avi@gmail.com"
+console.log("email of user 1", user1.email)
+console.log("email of user 2", user2.email) //both gives the same answer as object is non primitive and gives reference
