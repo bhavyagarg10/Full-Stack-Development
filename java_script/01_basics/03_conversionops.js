@@ -68,7 +68,8 @@ console.log(null==0);
 console.log(null<=0);
 console.log(null>=0);
 //== and other comparison(> < >= <= ) act differently as comparison convert null into a number and treat is as 0
-// undefined gives false to every case*/
+// undefined gives false to every case
+*/
 
 // '===' strick check it comapare value and datatype both
 console.log("2"===2)
