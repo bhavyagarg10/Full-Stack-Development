@@ -1,0 +1,40 @@
+<!-- AJAX REQUEST :- ASYNCHRONOUS JAVASCRIPT XML REQUEST ARE USED BEFORE THE FETCH API -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: aliceblue">
+    0 UNSENT Client has been created. open() not called yet. 1 OPENED open() has
+    been called. 2 HEADERS_RECEIVED send() has been called, and headers and
+    status are available. 3 LOADING Downloading; responseText holds partial
+    data. 4 DONE The operation is complete.
+    <div>
+      <button id="btn">Click me</button>
+    </div>
+    <div>
+      <img src="" alt="" id="photo" />
+      <h2 id="followers"></h2>
+    </div>
+  </body>
+  <script>
+    document.querySelector("#btn").addEventListener("click", function () {
+      const requestURL = "https://api.github.com/users/bhavyagarg10";
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", requestURL);
+      xhr.onreadystatechange = function () {
+        //onreadystatechange detect the change of state and every time state change it will call itself
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+          const data = JSON.parse(this.responseText); //response text always give data in string
+          document.getElementById("photo").src=data.avatar_url;
+          document.getElementById("photo").style="height:100px";
+          document.getElementById("followers").innerHTML=`Followers: ${data.followers}`;
+        }
+      };
+      xhr.send();
+    });
+  </script>
+</html>
