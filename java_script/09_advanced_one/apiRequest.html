@@ -7,10 +7,10 @@
     <title>Document</title>
   </head>
   <body style="background-color: #212121; color: aliceblue">
-    0 UNSENT Client has been created. open() not called yet. 1 OPENED open() has
+    <!-- 0 UNSENT Client has been created. open() not called yet. 1 OPENED open() has
     been called. 2 HEADERS_RECEIVED send() has been called, and headers and
     status are available. 3 LOADING Downloading; responseText holds partial
-    data. 4 DONE The operation is complete.
+    data. 4 DONE The operation is complete. -->
     <div>
       <button id="btn">Click me</button>
     </div>
@@ -21,7 +21,7 @@
   </body>
   <script>
     document.querySelector("#btn").addEventListener("click", function () {
-      const requestURL = "https://api.github.com/users/bhavyagarg10";
+      const requestURL = "https://api.github.com/users/abd776";
       const xhr = new XMLHttpRequest();
       xhr.open("GET", requestURL);
       xhr.onreadystatechange = function () {
