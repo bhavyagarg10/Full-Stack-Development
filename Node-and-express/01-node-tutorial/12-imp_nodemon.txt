@@ -1,0 +1,23 @@
+✅ Option 1: Install Locally (Recommended for Projects)
+This keeps the dependency tied to your project.
+
+Open your project directory in the terminal.
+
+Run:
+npm install --save-dev nodemon
+
+In your package.json, add a script like:
+"scripts": {
+  "start": "nodemon index.js"
+}
+Replace index.js with the name of your main file.
+
+Now run your project in dev mode with:
+npm start
+
+✅ Option 2: Install Globally (Optional)
+Run:
+
+npm install -g nodemon
+Then just run:
+nodemon index.js
